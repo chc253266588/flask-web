@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask,render_template
 from flask.ext.script import Manager
 
 
@@ -7,11 +7,11 @@ manager = Manager(app)
 
 @app.route("/")
 def index():
-	return '<h1>Hello World!</h1>'
+	return render_template('index.html')
 
 @app.route("/user/<name>")
 def user(name):
-	return "<h2>Hello %s!!!</h2>" % name
+	return render_template("user.html",name=name)
 
 if __name__ == '__main__':
 	manager.run()
