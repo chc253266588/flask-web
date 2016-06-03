@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block title %}Flask-Web{% endblock %}
+
+{% block content %}
+	<form class="uk-form" method="POST">
+		{{ form.hidden_tag() }}
+		{{ form.name.label }} {{ form.name() }}
+		{{ form.passwd.label }} {{ form.passwd() }}
+		{{ form.submit(class="uk-button") }}
+	</form>
+{% endblock %}
+

@@ -1,0 +1,119 @@
+#header {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 10;
+}
+#header .uk-navbar {
+  border-width: 0;
+}
+
+body{
+	padding-top: 70px;
+}
+
+.tm-background { background: #CCC; }
+
+.tm-middle { background: #fff; }
+
+.tm-alert { 
+  background: #fff; 
+  margin: 0px;
+  padding: 15px 0;}
+
+/* Tablet and bigger */
+@media (min-width: 768px) {
+
+    .tm-sidebar {
+        margin-right: -1px !important;
+        border-right: 1px solid #E5E5E5;
+    }
+
+    .tm-main {
+        padding-left: 50px !important;
+        border-left: 1px solid #E5E5E5;
+    }
+
+}
+
+.tm-middle,
+.tm-section,
+.tm-footer { padding: 50px 0; }
+
+.tm-navbar  {
+    border: none;
+    background: #CCC;
+}
+
+.tm-navbar .uk-navbar-content,
+.tm-navbar .uk-navbar-brand,
+.tm-navbar .uk-navbar-toggle {
+    height: 60px;
+    margin-top: 0;
+    text-shadow: none;
+}
+
+.tm-navbar .uk-navbar-nav > li > a {
+    height: 60px;
+    line-height:60px;
+    margin: 0;
+    border: none;
+    border-radius: 3px !important;
+    text-shadow: none;
+    font-size: 14px;
+}
+
+
+.tm-navbar .uk-navbar-nav > li { margin-left: 20px; }
+
+/* Hover */
+.tm-navbar .uk-navbar-nav > li:hover > a,
+.tm-navbar .uk-navbar-nav > li > a:focus,
+.tm-navbar .uk-navbar-nav > li.uk-open > a {
+	background-color: #CCC;
+    border: none;
+    color: #FFF;
+}
+
+/* Active */
+.tm-navbar .uk-navbar-nav > li.uk-active > a {
+    background-color: #CCC;
+    color: #FFF;
+}
+
+/* OnClick */
+.tm-navbar .uk-navbar-nav > li > a:active { background-color: transparent; }
+
+.tm-nav > li > a { color: #777; }
+
+/* Hover */
+.tm-nav > li > a:hover,
+.tm-nav > li > a:focus,
+.tm-nav > li.uk-active > a  {
+    background: #F5F5F5;
+    color: #444;
+}
+
+/* Sub-object: `nav-header` */
+.tm-nav .uk-nav-header {
+    color: #222;
+    font-weight: normal;
+}
+
+.tm-dropdown {
+    margin-top: 10px;
+    border: solid #CCC 1px;
+}
+
+.uk-panel > p > a {color: #fff;}
+.tm-footer { color: #fff; }
+.tm-subnav > li > a { color: #fff;}
+
+.uk-form-password{display:inline-block;position:relative;max-width:100%}
+.uk-form-password-toggle{display:block;position:absolute;top:50%;right:10px;margin-top:-6px;font-size:13px;line-height:13px;color:#999}
+.uk-form-password-toggle:hover{color:#999;text-decoration:none}
+.uk-form-password>input{padding-right:50px!important}
+
+
+

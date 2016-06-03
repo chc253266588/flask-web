@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block title %}Flask-Web{% endblock %}
+
+{% block content %}
+	{% if alert %}
+		<div class="uk-alert uk-text-center uk-alert-warning" data-uk-alert>
+                	<a href="" class="uk-alert-close uk-close"></a>
+                	<p>{{ alert }}</p>
+        	</div>
+	{% endif %}
+	
+	<h1>Hello {% if name %}{{ name }}{% else %} Strong {% endif %}!</h1>
+{% endblock %}
